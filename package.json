@@ -1,0 +1,21 @@
+{
+  "name": "remote-pharmacy-website",
+  "version": "1.0.0",
+  "description": "this is for the version control to the site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/customDev2022/Remote-Pharmacy-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/customDev2022/Remote-Pharmacy-Website/issues"
+  },
+  "homepage": "https://github.com/customDev2022/Remote-Pharmacy-Website#readme"
+}
