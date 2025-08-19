@@ -25,10 +25,15 @@ jobs:
           WEBFLOW_API_KEY: ${{ secrets.WEBFLOW_API_KEY }}
         run: node pull-webflow.js
 
-      - name: Commit & Push Changes
+      - name: Configure git
         run: |
-          git config --global user.name "webflow-bot"
-          git config --global user.email "bot@example.com"
+          git config user.name "webflow-bot"
+          git config user.email "webflow-bot@users.noreply.github.com"
+
+      - name: Push changes
+        run: |
           git add .
           git commit -m "Auto-sync from Webflow API" || echo "No changes to commit"
-          git push
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
