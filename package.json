@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/customDev2022/Remote-Pharmacy-Website/issues"
   },
-  "homepage": "https://github.com/customDev2022/Remote-Pharmacy-Website#readme"
+  "homepage": "https://github.com/customDev2022/Remote-Pharmacy-Website#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
