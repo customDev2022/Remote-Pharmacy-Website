@@ -10,7 +10,7 @@ const headers = {
 };
 
 async function fetchCollections(siteId) {
-  const url = `https://api.webflow.com/sites/${WEBFLOW_SITE_ID}/collections`;
+  const url = `https://api.webflow.com/v2/sites/${WEBFLOW_SITE_ID}/collections`;
   const response = await fetch(url, { headers });
   const data = await response.json();
   fs.writeFileSync("collections.json", JSON.stringify(data, null, 2));
